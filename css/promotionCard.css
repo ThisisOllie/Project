@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  /* border: 1px solid blue; */
+  background-color: #430074;
+  height: 100px;
+  display: flex;
+}
+.header {
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.header .logo {
+  /* float: left; */
+}
+.header .header-right {
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .sign a {
+  display: inline-block;
+  text-decoration: none;
+  font: 1rem Tahoma;
+  color: #fff;
+  margin-right: 20px;
+}
+
+header .signInIcon a {
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  content: url("https://api.iconify.design/ph/user-bold.svg?color=white");
+}
+
+/*以下不需要了 */
+header .signInIcon a img {
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: url("https://api.iconify.design/ph/user-bold.svg?color=white");
+  /* I want to change the icon color to white */
+}
+
+/* ======================Breadcrumb========================= */
+.breadcrumb {
+  /* border: 1px solid black; */
+  display: inline-block;
+  background-color: #5d00d5;
+  width: 100%;
+  height: 25px;
+  padding: 2px 2px 2px 10px;
+}
+
+.breadcrumb ol {
+  /* border: 1px solid grey; */
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb ol > li::before {
+  content: "|";
+  margin: 0 5px;
+  font: 1rem Tahoma;
+  color: #fff;
+}
+
+.breadcrumb ol > li:first-child:before {
+  display: none;
+}
+
+.breadcrumb ol li > a {
+  text-decoration: none;
+  color: #fff;
+  font: 1rem Tahoma;
+}
+/* =============================carousell======================= */
+/* .carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-button {
+  cursor: pointer;
+} */
+
+.carousell {
+  width: 100px;
+  height: 500px;
+  background-image: url("./images/yellow-ticket.jpg");
+  background-size: cover; /* This ensures the image covers the entire container */
+  /* background-position: center center; Center the background image */
+}
+/* .carousell img {
+  width: auto;
+  height: 500px;
+} */
+/* ==============================gift / promotion button======================= */
+main {
+  background-color: #fff;
+  /* height: 500px; */
+}
+
+.switch-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.switch {
+  display: inline-block;
+}
+
+.button .btn {
+  background-color: white;
+  color: #9747ff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  font: 16px Tahoma;
+  border-radius: 32px;
+  border: 1px solid #9747ff;
+
+  margin: 10px -3px;
+}
+button:hover {
+  background-color: #9747ff;
+  color: white;
+  border: 1px solid #9747ff;
+}
+
+button.active {
+  background-color: #9747ff;
+  color: white;
+}
+
+/* ==============================gift card======================= */
+
+.page {
+  /* border: 1px solid red; */
+  border-radius: 16px;
+  display: none;
+  height: 250px;
+
+  margin-top: 20px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page .giftimg > img {
+  width: 100%;
+  height: 100px;
+  border-radius: 16px;
+}
+/* .img-left {
+  border: 1px solid green;
+  border-radius: 16px;
+  width: 300px;
+  height: 100%;
+  margin: 20px;
+  overflow: hidden;
+
+  .img-left img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+.selection-right {
+  flex-grow: 1;
+} */
+.promotionCardContainer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.card-1 {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-1 .img > img {
+  width: 100%;
+  height: 100px;
+  border-radius: 16px;
+}
+.promotionCardContainer .select {
+  font: 16px Tahoma;
+  color: #9747ff;
+}
+.promotionCardContainer .btn {
+  background-color: white;
+  color: #9747ff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  font: 16px Tahoma;
+  border-radius: 32px;
+  border: 1px solid #9747ff;
+}
+.promotionCardContainer .btn:hover {
+  background-color: #9747ff;
+  color: white;
+  border: 1px solid #9747ff;
+}
+
+/* ==============================Footer======================= */
+footer p {
+  /* border: 1px solid pink; */
+  font: 1rem Tahoma;
+  background-color: #430074;
+  color: white;
+  height: 100px;
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

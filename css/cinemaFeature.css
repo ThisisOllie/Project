@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  /* border: 1px solid blue; */
+  background-color: #430074;
+  height: 100px;
+  display: flex;
+}
+.header {
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.header .logo {
+  /* float: left; */
+}
+.header .header-right {
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .sign a {
+  display: inline-block;
+  text-decoration: none;
+  font: 1rem Tahoma;
+  color: #fff;
+  margin-right: 20px;
+}
+
+header .signInIcon a {
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  content: url("https://api.iconify.design/ph/user-bold.svg?color=white");
+}
+
+/*以下不需要了 */
+header .signInIcon a img {
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: url("https://api.iconify.design/ph/user-bold.svg?color=white");
+  /* I want to change the icon color to white */
+}
+
+/* ======================Breadcrumb========================= */
+.breadcrumb {
+  /* border: 1px solid black; */
+  display: inline-block;
+  background-color: #5d00d5;
+  width: 100%;
+  height: 25px;
+  padding: 2px 2px 2px 10px;
+}
+
+.breadcrumb ol {
+  /* border: 1px solid grey; */
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb ol > li::before {
+  content: "|";
+  margin: 0 5px;
+  font: 1rem Tahoma;
+  color: #fff;
+}
+
+.breadcrumb ol > li:first-child:before {
+  display: none;
+}
+
+.breadcrumb ol li > a {
+  text-decoration: none;
+  color: #fff;
+  font: 1rem Tahoma;
+}
+
+/* ==============================introduction======================= */
+main {
+  background-color: #000;
+}
+.premiere-section {
+  background-color: #000;
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; 為何會跑版 */
+
+  padding: 20px;
+}
+.premiere-img {
+  /* border: 1px solid blue; */
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+
+  flex: 1;
+}
+
+.premiere-img img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+}
+
+.premiere-text {
+  /* border: 1px solid pink; */
+  margin-left: 20px;
+  color: #fff;
+  font: 20px Tahoma;
+  text-align: center;
+
+  flex: 1;
+}
+
+.fix-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #9747ff;
+  position: fixed;
+  top: 50%;
+  left: 0;
+
+  content: url("https://api.iconify.design/ion/ticket-sharp.svg?color=white");
+}
+
+/* =============================float-banner======================= */
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-card {
+  position: relative;
+  width: 300px; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.movie-image {
+  position: relative;
+}
+
+.movie-image img {
+  width: 100%;
+  height: auto;
+}
+
+.float-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #fff;
+  padding: 10px;
+}
+
+.star-icon img {
+  width: 24px; /* Adjust the size of the star icon */
+  height: auto;
+  margin-right: 5px;
+}
+
+.rating {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ==============================Footer======================= */
+footer p {
+  /* border: 1px solid pink; */
+  font: 1rem Tahoma;
+  background-color: #430074;
+  color: white;
+  height: 100px;
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  /* border: 1px solid blue; */
+  background-color: #430074;
+  height: 100px;
+  display: flex;
+}
+.header {
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.header .logo {
+  /* float: left; */
+}
+.header .header-right {
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .sign a {
+  display: inline-block;
+  text-decoration: none;
+  font: 1rem Tahoma;
+  color: #fff;
+  margin-right: 20px;
+}
+
+header .signInIcon a {
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  /* width: 100px;
+    height: 100px; */
+  color: #fff;
+}
+
+header .signInIcon a img {
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  /* I want to change the icon color to white */
+}
+
+/* ======================Breadcrumb========================= */
+.breadcrumb {
+  /* border: 1px solid black; */
+  display: inline-block;
+  background-color: #5d00d5;
+  width: 100%;
+  height: 25px;
+  padding: 2px 2px 2px 10px;
+}
+
+.breadcrumb ol {
+  /* border: 1px solid grey; */
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb ol > li::before {
+  content: "|";
+  margin: 0 5px;
+  font: 1rem Tahoma;
+  color: #fff;
+}
+
+.breadcrumb ol > li:first-child:before {
+  display: none;
+}
+
+.breadcrumb ol li > a {
+  text-decoration: none;
+  color: #fff;
+  font: 1rem Tahoma;
+}
+
+/* ============================Quickbook======================= */
+.quick-book {
+  background-color: #9747ff;
+  height: 55px;
+  /* position: fixed;
+  left: 0;
+  top: 125px; */
+}
+#sticky-bar {
+  /* 當往上捲的時候quickbar要黏在最上方，不要消失。 */
+}
+.quick-book ol {
+  /* border: 1px solid pink; */
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font: 1rem Tahoma;
+  align-items: center;
+  justify-content: center;
+}
+.quick-book ol > li {
+  margin: 0 10px;
+  font: bold 1rem Tahoma;
+  color: #fff;
+}
+.quick-book li > input {
+  border: none;
+  border-radius: 32px;
+  height: 35px;
+  width: 200px;
+}
+.quick-book li > input:focus {
+  outline: 2px solid #430074;
+  /* box-shadow:0 0 5px rgba(151, 71,255,.1); */
+}
+.quick-book li > input::placeholder {
+  /* text-align: center; */
+  padding-left: 20px;
+  font: 0.8rem Tahoma;
+  color: #9747ff;
+}
+.quick-book li > button {
+  border: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font: 1rem Tahoma;
+  color: #fff;
+  border-radius: 32px;
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* ==============================main movie list======================= */
+.movie-list {
+  /* border: 1px solid white; */
+  background-color: #000;
+  padding: 50px;
+}
+.movie-list ol {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+
+.movie-list ol > li > div {
+  /* width: 200px; */
+  flex-basis: calc(25% - 10px);
+  height: 350px;
+  overflow: hidden;
+  border-radius: 16px;
+  align-items: center;
+}
+.movie-list ol > li > div > img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+/* =============================float-banner======================= */
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-card {
+  position: relative;
+  width: 300px; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.movie-image {
+  position: relative;
+}
+
+.movie-image img {
+  width: 100%;
+  height: auto;
+}
+
+.float-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 213, 0.7);
+
+  color: #fff;
+  padding: 10px;
+  display: flex;
+}
+
+.star-icon img {
+  width: 24px; /* Adjust the size of the star icon */
+  height: auto;
+  margin-right: 5px;
+}
+
+.rating {
+  font-size: 18px;
+  font-weight: bold Tahoma;
+  color: white;
+}
+
+/* ==============================Footer======================= */
+footer p {
+  /* border: 1px solid pink; */
+  font: 1rem Tahoma;
+  background-color: #430074;
+  color: white;
+  height: 100px;
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
